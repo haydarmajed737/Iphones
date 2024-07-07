@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2c0232553a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="head">
+            <div class="logo">LOGO</div>
+            <div class="search-bar">
+                <i class="fa-solid fa-search"></i>
+                <input type="text"  id="search" placeholder="serach..." onkeyup="search()">
+            </div>
+            <div class="cart-counter">
+                      <i class="fa-solid fa-cart-shopping" onclick="opencart()"></i>
+                      <p id="counter">0</p>
+            </div>
+        </div>
+        <div class="root">
+            <div class="item">
+                <img src="images/4.png">
+                <h4 class="h4">iphone 4</h4>
+                <p>200$</p>
+                <button onclick="infoo()" id="infobutton" data-img="images/4.png" data-screen="3.5 inches" data-title="iphone 4" data-colors="red,blue,yellow" data-storage="8, 16 or 32 GB">info <i class="fa-regular fa-circle-question"></i></button>
+                <button data-text="iphone 4" data-price="200" data-img="images/4.png" data-btn="-" id="button">add to cart <i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+            <div class="item">
+                <img src="images/5.png">
+                <h4 class="h4">iphone 5</h4>
+                <p>250$</p>
+                <button onclick="infoo()" id="infobutton" data-img="images/5.png" data-screen="4 inches" data-title="iphone 5" data-colors="red,blue,yellow" data-storage="16, 32 or 64 GB">info <i class="fa-regular fa-circle-question"></i></button>
+                <button data-text="iphone 5" data-price="250" data-img="images/5.png" data-btn="-" id="button">add to cart <i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+            <div class="item">
+                <img src="images/6.png">
+                <h4 class="h4">iphone 6</h4>
+                <p>300$</p>
+                <button onclick="infoo()" id="infobutton" data-img="images/6.png" data-screen="4.7 inches" data-title="iphone 6" data-colors="red,blue,yellow" data-storage="16, 32, 64 or 128GB">info <i class="fa-regular fa-circle-question"></i></button>
+                <button data-text="iphone 6" data-price="300" data-img="images/6.png" data-btn="-" id="button">add to cart <i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+            <div class="item">
+                <img src="images/7.png">
+                <h4 class="h4">iphone 7</h4>
+                <p>450$</p>
+                <button onclick="infoo()" id="infobutton" data-img="images/7.png" data-screen="4.7 inches" data-title="iphone 7" data-colors="red,blue,yellow" data-storage=" 32, 128 or 256GB">info <i class="fa-regular fa-circle-question"></i></button>
+                <button data-text="iphone 7" data-price="450" data-img="images/7.png" data-btn="-" id="button">add to cart <i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+            <div class="item">
+                <img src="images/8.png">
+                <h4 class="h4">iphone 8</h4>
+                <p>600$</p>
+                <button onclick="infoo()" id="infobutton" data-img="images/8.png" data-screen="4.7 inches" data-title="iphone 8" data-colors="red,blue,yellow" data-storage="64GB or 256GB ">info <i class="fa-regular fa-circle-question"></i></button>
+                <button data-text="iphone 8" data-price="600" data-img="images/8.png" data-btn="-" id="button">add to cart <i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+            <div class="item">
+                <img src="images/9.png">
+                <h4 class="h4"> iphone x</h4>
+                <p>800$</p>
+                <button onclick="infoo()" id="infobutton" data-img="images/9.png"  data-screen="5.85 inches" data-title="iphone x" data-colors="red,blue,yellow" data-storage=" 64GB or 256GB ">info <i class="fa-regular fa-circle-question"></i></button>
+                <button data-text="iphone x" data-price="800" data-img="images/9.png" data-btn="-" id="button">add to cart <i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+            <div class="item">
+                <img src="images/11.png">
+                <h4 class="h4">iphone 11</h4>
+                <p>1000$</p>
+                <button onclick="infoo()" id="infobutton" data-img="images/11.png" data-screen="6.06 inches" data-title="iphone 11" data-colors="red,blue,yellow" data-storage=" 64GB, 128GB, and 256GB">info <i class="fa-regular fa-circle-question"></i></button>
+                <button data-text="iphone 11" data-price="1000" data-img="images/11.png" data-btn="-" id="button">add to cart <i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+            <div class="item">
+                <img src="images/12.png">
+                <h4 class="h4">iphone 12</h4>
+                <p>1200$</p>
+                <button onclick="infoo()" id="infobutton" data-img="images/12.png" data-screen="6.06 inches" data-title="iphone 12" data-colors="red,blue,yellow" data-storage=" 64GB, 128GB, and256 GB">info <i class="fa-regular fa-circle-question"></i></button>
+                <button data-text="iphone 12" data-price="1200" data-img="images/12.png" data-btn="-" id="button">add to cart <i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+            <div class="item">
+                <img src="images/13.png">
+                <h4 class="h4">iphone 13</h4>
+                <p>1300$</p>
+                <button onclick="infoo()" id="infobutton" data-img="images/13.png" data-screen="6.1 inches" data-title="iphone 13" data-colors="red,blue,yellow" data-storage=" 128GB, 256GB, and 512GB">info <i class="fa-regular fa-circle-question"></i></button>
+                <button data-text="iphone 13" data-price="1300" data-img="images/13.png" data-btn="-" id="button">add to cart <i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+            <div class="item">
+                <img src="images/14.png">
+                <h4 class="h4">iphone 14</h4>
+                <p>1500$</p>
+                <button onclick="infoo()" id="infobutton" data-img="images/14.png" data-screen="6.1 inches" data-title="iphone 14" data-colors="red,blue,yellow" data-storage="128, 256, and 512 GB">info <i class="fa-regular fa-circle-question"></i></button>
+                <button data-text="iphone 14" data-price="1500" data-img="images/14.png" data-btn="-" id="button">add to cart <i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+            <div class="item">
+                <img src="images/15.png">
+                <h4 class="h4">iphone 15</h4>
+                <p>1700$</p>
+                <button onclick="infoo()" id="infobutton" data-img="images/15.png" data-screen="6.12 inches" data-title="iphone 15" data-colors="red,blue,yellow" data-storage="128GB, 256GB, 512GB and 1TB">info <i class="fa-regular fa-circle-question"></i></button>
+                <button data-text="iphone 15" data-price="1700" data-img="images/15.png" data-btn="-" id="button">add to cart <i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="cart" id="cart">
+        <p class="cart-head">Your Cart</p>
+        <i class="fa-solid fa-x" onclick="closecart()"></i>
+        <p id="total">total:0.00$</p>
+    </div>
+  <div id="info"></div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
